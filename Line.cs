@@ -52,7 +52,6 @@ namespace Orienteering_Course_Solver
         //This method uses the Show method to display all the points in the line object's point array.
         public Point GetPt(int _iP)
         {
-            Console.WriteLine(_iP);
             return groundLine[_iP];
         }
         //This method returns a point based upon the parameter given.
@@ -71,7 +70,7 @@ namespace Orienteering_Course_Solver
                     _closestPt = i;
                 }
             }
-            return $"The point on the groundline that is the closest to your end point is {groundLine[_closestPt].Show()} ";
+            return $"The point on the groundline that is the closest to your end point is "+ Show(_closestPt) ;
         }
         //This method takes a point as a parameter and scans the point array in this line object and returns a string telling which point is closest in the array.
     }
