@@ -21,7 +21,7 @@ namespace Orienteering_Course_Solver
             Console.WriteLine("How many points are on the ground line?");
             groundLine._numLinePts = UserInputVeri(1, 100, false);
             Console.WriteLine("How long is the ground line in feet?");
-            groundLine._lineLength = UserInputVeri(1, 250, false);
+            groundLine._lineLength = UserInputVeri(1, 25000, false);
             Console.WriteLine("What direction in degrees does the line follow, facing from the starting value?");
             groundLine._lineDirection = UserInputVeri(0, 359, false);
             //Takes the user's inputs and verifies them before setting the groundLine's values.
